@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spond1.github.io/sitemap.xml
