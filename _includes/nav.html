@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="page-width nav-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Sokret Pond home">
+      <span class="wordmark-mark" aria-hidden="true">SP</span>
+      <span>Sokret Pond</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      {% for item in site.navigation %}
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+      <span class="theme-icon theme-icon-sun" aria-hidden="true">☼</span>
+      <span class="theme-icon theme-icon-moon" aria-hidden="true">◐</span>
+      <span class="theme-toggle-label">Theme</span>
+    </button>
+  </div>
+</header>
