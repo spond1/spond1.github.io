@@ -1,0 +1,34 @@
+title: "Sokret Pond"
+description: "Sokret Pond is an MBA candidate at Berkeley Haas focused on strategic finance, economic consulting, and practical impact."
+url: "https://spond1.github.io"
+baseurl: ""
+lang: "en-US"
+author:
+  name: "Sokret Pond"
+  github: "spond1"
+  linkedin: "https://www.linkedin.com/in/sokret-pond/"
+twitter:
+  username: ""
+social:
+  name: "Sokret Pond"
+  links:
+    - "https://github.com/spond1"
+    - "https://www.linkedin.com/in/sokret-pond/"
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Experience"
+    url: "/experience/"
+  - title: "Contact"
+    url: "/contact/"
+markdown: kramdown
+permalink: pretty
+timezone: America/Los_Angeles
+exclude:
+  - README.md
+  - PLAN.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
