@@ -29,6 +29,11 @@ timezone: America/Los_Angeles
 exclude:
   - README.md
   - PLAN.md
+  - Change1.md
   - Gemfile
   - Gemfile.lock
   - vendor
+  - .agents
+  - .cache
+  - .local
+  - .replit

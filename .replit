@@ -1,0 +1,29 @@
+modules = ["ruby-3.2"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Jekyll Preview"
+
+[[workflows.workflow]]
+name = "Jekyll Preview"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "export PATH=\"$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH\"; port=\"${PORT:-8000}\"; jekyll serve --host 0.0.0.0 --port \"$port\""
+waitForPort = 8000
+
+[[ports]]
+localPort = 8000
+externalPort = 80
