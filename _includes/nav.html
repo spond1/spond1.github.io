@@ -6,7 +6,11 @@
     </a>
     <nav class="main-nav" aria-label="Primary navigation">
       {% for item in site.navigation %}
-        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+        {% assign nav_is_current = false %}
+        {% if page.url == item.url or item.section and page.section == item.section %}
+          {% assign nav_is_current = true %}
+        {% endif %}
+        <a href="{{ item.url | relative_url }}"{% if nav_is_current %} aria-current="page"{% endif %}>{{ item.title }}</a>
       {% endfor %}
     </nav>
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">

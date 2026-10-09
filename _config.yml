@@ -19,8 +19,9 @@ navigation:
     url: "/"
   - title: "About"
     url: "/about/"
-  - title: "Experience"
+  - title: "Work"
     url: "/experience/"
+    section: "work"
   - title: "Contact"
     url: "/contact/"
 markdown: kramdown
@@ -30,6 +31,7 @@ exclude:
   - README.md
   - PLAN.md
   - Change1.md
+  - Change2.md
   - Gemfile
   - Gemfile.lock
   - vendor
