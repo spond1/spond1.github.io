@@ -27,4 +27,4 @@ Make Sokret’s profile more memorable to finance and economic consulting recrui
 - All three stories use verifiable existing content, with Atomery providing the impact dimension.
 - `Change2.md` is not exposed in the generated site.
 - The site builds and renders in Replit Preview at desktop and mobile widths.
-- Each branch and pull request remains separate; the merged result is confirmed on `main` and on the published site after GitHub Pages rebuilds.
+- Keep this branch and pull request separate from the first improvement. Open the PR to `main`, then wait for the user to review, comment, and merge it. Afterward, sync `main` and verify the published site after GitHub Pages rebuilds.
