@@ -32,6 +32,7 @@ exclude:
   - PLAN.md
   - Change1.md
   - Change2.md
+  - Change3.md
   - Gemfile
   - Gemfile.lock
   - vendor
